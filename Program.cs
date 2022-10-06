@@ -104,6 +104,7 @@ while ( caseNumber != 0 ){
         case 4:
             break;
         default:
+            Console.WriteLine("Неверный ввод числа.");
             break;
 
     }
