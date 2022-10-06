@@ -103,6 +103,10 @@ while ( caseNumber != 0 ){
                 }
             }
 
+            else{
+                Console.WriteLine("недопустимое значение.");
+            }
+
            
         
             break;
