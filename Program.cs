@@ -90,15 +90,20 @@ while ( caseNumber != 0 ){
 
             int day = int.Parse(Console.ReadLine());
 
-            if (day == 6 || day == 7)
+            if (day >= 1 && day <= 7)
             {
-                Console.WriteLine("Да, выходной.");
+                 if (day == 6 || day == 7)
+                {
+                    Console.WriteLine("Да, выходной.");
+                }
+
+                else
+                {
+                    Console.WriteLine("Нет, будний день.");
+                }
             }
 
-            else
-            {
-                Console.WriteLine("Нет, будний день.");
-            }
+           
         
             break;
         case 4:
