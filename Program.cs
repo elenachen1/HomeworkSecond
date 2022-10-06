@@ -16,23 +16,20 @@ while ( caseNumber != 0 ){
 
             Console.WriteLine("Задача 1. Данная задача на вход принимает трехзначное число и выводит вторую цифру этого числа");
             Console.WriteLine("Введите трехзначное число");
-            int number = int.Parse(Console.ReadLine());
+            int ThreeDigitNumber = int.Parse(Console.ReadLine());
 
-            var num = Math.Abs(number);
-            var result = Math.Log10(num) + 1;
+            int digits = (int) Math.Log10(Math.Abs(ThreeDigitNumber)) + 1;
 
-            int lenght = (int) result;
-
-            if (lenght == 3)
+            if (digits == 3)
             {
-                Console.WriteLine((number%100)/10);
+                Console.WriteLine((ThreeDigitNumber%100)/10);
             }
 
             else{
                 Console.WriteLine("Число не является трехзначным");
             }
-
             break;
+
         case 2:
             break;
         case 3:
